@@ -123,6 +123,10 @@ img {
     margin-bottom: 1rem;
 }
 
+.texto-seccion {
+    flex-basis: 100%;
+}
+
 .tarjeta {
     flex: 1 1 300px;
     padding: 1.25rem;
