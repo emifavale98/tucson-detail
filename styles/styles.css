@@ -1,0 +1,181 @@
+/* ==========================================================
+   TUCSON DETAIL · styles.css (versión básica)
+   ========================================================== */
+
+
+/* ---------- 1. RESET Y VARIABLES ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Paleta de colores */
+    --color-primario: #12161c;
+    --color-secundario: #2c4a63;
+    --color-acento: #ff6b1a;
+    --color-fondo: #f2f4f6;
+    --color-superficie: #ffffff;
+    --color-texto: #12161c;
+    --color-texto-claro: #f2f4f6;
+
+    /* Tipografías */
+    --fuente-titulos: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --fuente-cuerpo: 'Barlow', Arial, sans-serif;
+}
+
+
+/* ---------- 2. BASE Y TIPOGRAFÍA ---------- */
+
+body {
+    font-family: var(--fuente-cuerpo);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente-titulos);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------- 3. HEADER Y NAVEGACIÓN ---------- */
+
+.header {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+
+.logo {
+    font-family: var(--fuente-titulos);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-acento);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* ---------- 4. CONTENIDO PRINCIPAL ---------- */
+
+.titulo-principal {
+    padding: 1.25rem;
+}
+
+.hero {
+    padding: 1.25rem;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+    text-align: center;
+}
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--color-superficie);
+    border-radius: 6px;
+}
+
+.titulo-seccion {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+}
+
+.tarjeta {
+    flex: 1 1 300px;
+    padding: 1.25rem;
+    border-radius: 6px;
+    background-color: var(--color-fondo);
+}
+
+.tarjeta-ancha {
+    flex-basis: 100%;
+}
+
+
+/* ---------- 5. IMÁGENES ---------- */
+
+.figura {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.figura img {
+    width: 300px;
+    height: 267px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.figura figcaption {
+    flex-basis: 100%;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.figura-centrada {
+    justify-content: center;
+}
+
+.figura-centrada figcaption {
+    text-align: center;
+}
+
+
+/* ---------- 6. FOOTER ---------- */
+
+.footer {
+    padding: 1.25rem;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}

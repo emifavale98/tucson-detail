@@ -5,80 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo -->
     <title>Tucson Detail | Contacto</title>
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <a href="../index.html">Tucson Detail</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
+    <header class="header">
+        <a class="logo" href="../index.html">Tucson Detail</a>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./servicios.html">Servicios</a>
                 </li>
-                <li>
-                    <a href="./precios.html">Precios</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./precios.html">Precios</a>
                 </li>
-                <li>
-                    <a href="./galeria.html">Galería</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./galeria.html">Galería</a>
                 </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Cuerpo Principal -->
     <main>
-        <h1>Contacto</h1>
-        <section>
-            <h2>Pedí tu turno</h2>
+        <h1 class="titulo-principal">Contacto</h1>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Pedí tu turno</h2>
             <p>Dejanos tus datos y qué servicio te interesa, y te respondemos a la brevedad.</p>
-            <form action="#" method="post">
+            <form class="formulario" action="#" method="post">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <input class="campo" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                <input class="campo" type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
 
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="11 1234 5678">
+                <input class="campo" type="tel" id="telefono" name="telefono" placeholder="11 1234 5678">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué servicio necesitás y qué auto tenés" required></textarea>
+                <textarea class="campo" id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué servicio necesitás y qué auto tenés" required></textarea>
 
-                <input type="submit" value="Enviar consulta">
+                <input class="boton" type="submit" value="Enviar consulta">
             </form>
         </section>
-        <section>
-            <h2>Dónde encontrarnos</h2>
-            <p>Dirección: Av. Siempre Viva 1234, Buenos Aires.</p>
-            <ul>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Dónde encontrarnos</h2>
+            <p>Dirección: Av. Ejemplo 1234, Buenos Aires.</p>
+            <ul class="lista">
                 <li>Lunes a viernes: de 9 a 18 h</li>
                 <li>Sábados: de 9 a 13 h</li>
             </ul>
-            <figure>
+            <figure class="figura">
                 <img src="../assets/pulido.jpg" alt="Proceso de pulido camioneta negra">
                 <figcaption>Te esperamos en el taller.</figcaption>
             </figure>
         </section>
     </main>
     <!-- Pie -->
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <footer class="footer">
+        <ul class="redes">
+            <li class="red-item">
+                <a class="red-enlace" href="https://www.instagram.com/" target="_blank">Instagram</a>
             </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <li class="red-item">
+                <a class="red-enlace" href="https://www.facebook.com/" target="_blank">Facebook</a>
             </li>
-            <li>
-                <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            <li class="red-item">
+                <a class="red-enlace" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
             </li>
         </ul>
-        <p>&copy; 2026 Tucson Detail. Todos los derechos reservados.</p>
+        <p class="copyright">&copy; 2026 Tucson Detail. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

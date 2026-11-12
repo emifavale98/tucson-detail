@@ -5,94 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo -->
     <title>Tucson Detail | Inicio</title>
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <a href="./index.html">Tucson Detail</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
+    <header class="header">
+        <a class="logo" href="./index.html">Tucson Detail</a>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="./index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="./pages/servicios.html">Servicios</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./pages/servicios.html">Servicios</a>
                 </li>
-                <li>
-                    <a href="./pages/precios.html">Precios</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./pages/precios.html">Precios</a>
                 </li>
-                <li>
-                    <a href="./pages/galeria.html">Galería</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./pages/galeria.html">Galería</a>
                 </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Cuerpo Principal -->
     <main>
-        <h1>En Tucson Detail buscamos dejar tu auto como siempre lo soñaste</h1>
-        <section>
-            <h2>Quiénes somos y qué hacemos</h2>
+        <h1 class="titulo-principal">En Tucson Detail buscamos dejar tu auto como siempre lo soñaste</h1>
+        <section class="hero">
+            <h2 class="subtitulo-hero">Quiénes somos y qué hacemos</h2>
             <p>Somos un taller de detailing especializado en el cuidado integral de tu auto. Hacemos lavados, pulido, film protector de pintura (PPF), sellado cerámico y limpieza de interiores, con productos de calidad y atención a cada detalle, sin importar el tipo de uso que le des.</p>
         </section>
-        <section>
-            <h2>Servicios destacados</h2>
-            <article>
-                <h3>Lavados</h3>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Servicios destacados</h2>
+            <article class="tarjeta tarjeta-ancha">
+                <h3 class="tarjeta-titulo">Lavados</h3>
                 <p>Tenemos 3 tipos de lavados:</p>
-                <ul>
+                <ul class="lista">
                     <li>Carrocería e interior clásico</li>
                     <li>Carrocería e interior premium (mejor terminación y mejor detallado)</li>
                     <li>Carrocería, interior y chasis con descontaminación y desengrasante</li>
                 </ul>
-                <figure>
+                <figure 
+                    class="figura figura-centrada">
                     <img src="./assets/lavado-porsche.jpg" alt="Porsche negro en proceso de lavado exterior">
                     <img src="./assets/limpieza-tablero.jpg" alt="Proceso de limpieza con pincel">
                     <img src="./assets/descontaminacion-interior.jpg" alt="Proceso de descontaminación interior">
                     <figcaption>Lavado completo realizado en nuestro taller.</figcaption>
                 </figure>
             </article>
-            <article>
-                <h3>Pulido de pintura</h3>
+            <article class="tarjeta">
+                <h3 class="tarjeta-titulo">Pulido de pintura</h3>
                 <p>Eliminamos imperfecciones y rayones finos, devolviendo un brillo original a la carrocería.</p>
-                <figure>
+                <figure class="figura">
                     <img src="./assets/pulido.jpg" alt="Proceso de pulido camioneta negra">
                     <figcaption>Pulido de pintura realizado en nuestro taller.</figcaption>
                 </figure>
             </article>
-            <article>
-                <h3>PPF</h3>
+            <article class="tarjeta">
+                <h3 class="tarjeta-titulo">PPF</h3>
                 <p>Ofrecemos PPF de la mejor calidad, con adhesivo de alto nivel para evitar lastimaduras a la hora de quitarlo, también es importado.</p>
-                <figure>
+                <figure class="figura">
                     <img src="./assets/aplicacion-ppf.jpg" alt="Proceso de aplicación de PPF">
                     <figcaption>Aplicación de PPF en ópticas.</figcaption>
                 </figure>
             </article>
-            <article>
-                <h3>Sellado cerámico</h3>
+            <article class="tarjeta">
+                <h3 class="tarjeta-titulo">Sellado cerámico</h3>
                 <p>Nuestro sellado cerámico mantiene la duración del pulido y prolonga su vida útil.</p>
-                <figure>
+                <figure class="figura">
                     <img src="./assets/sellado-ceramico.jpg" alt="Proceso de sellado cerámico">
                     <figcaption>Aplicación de selladores para mantener el pulido.</figcaption>
                 </figure>
             </article>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <!-- Pie -->
+    <footer class="footer">
+        <ul class="redes">
+            <li class="red-item">
+                <a class="red-enlace" href="https://www.instagram.com/" target="_blank">Instagram</a>
             </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <li class="red-item">
+                <a class="red-enlace" href="https://www.facebook.com/" target="_blank">Facebook</a>
             </li>
-            <li>
-                <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            <li class="red-item">
+                <a class="red-enlace" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
             </li>
         </ul>
-        <p>&copy; 2026 Tucson Detail. Todos los derechos reservados.</p>
+        <p class="copyright">&copy; 2026 Tucson Detail. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
